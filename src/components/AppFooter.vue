@@ -1,89 +1,36 @@
 <script></script>
 <template>
-    <footer class=" text-white">
-        <div class="container">
+    <footer>
+        <div class="container-none">
 
-            <!-- Upper -->
-            <div class="footer-up py-5">
-                <div class="row justify-content-between">
+            <h1 class="text-5xl font-bold uppercase">Let's Connect</h1>
 
-                    <!-- Title -->
-                    <div class="col">
-                        <p>Portofolio 2022-2023</p>
-                    </div>
-                    <!-- Name -->
-                    <div class="col text-center">
-                        <p>Serena Dong</p>
-                    </div>
-                    <!-- Coordinates -->
-                    <div class="col text-end">
-                        <p>
-                            52.7904'' N, 18.7440'' E
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <!-- Links -->
+            <ul class="flex flex-wrap gap-2">
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">GitHub</a></li>
+                <li><a href="">serenadong@outlook.it</a></li>
+            </ul>
 
-            <!-- Middle -->
-            <div class="footer-middle py-5 my-5 text-center">
-                <h1><a href="">Get in touch</a></h1>
-            </div>
+            <!-- Signature -->
+            <ul class="flex flex-wrap justify-between gap-1">
+                <li class="col text-xs">Made with <i class="fa-solid fa-heart"></i> and <i
+                        class="fa-brands fa-vuejs"></i></li>
+                <li class="col text-xs text-end"><i class="fa-solid fa-arrow-up"></i> Back to top</li>
+                <li class="col text-xs">© 2024 Serena Dong</li>
+            </ul>
 
-            <!-- Lower -->
-            <div class="footer-lower pt-5 pb-4 ">
-                <div class="row justify-content-between">
-
-                    <!-- Copyrights -->
-                    <div class="col-3">
-                        <span>© All rights reserved. Template by Vlad Sokur
-                            Powered by Webflow</span>
-                    </div>
-
-                    <!-- Functions -->
-                    <div class="col-3">
-                        <nav>
-                            <ul class="d-flex gap-3 justify-content-center ">
-                                <li><a href="https://www.linkedin.com/in/serena-dong-500877240/">Linkedin</a></li>
-                                <li><a href="https://github.com/Serena-Dong">GitHub</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-3"></div>
-                </div>
-
-            </div>
         </div>
     </footer>
 </template>
-<style scoped>
-.footer-middle h1 a {
-    color: white;
-}
+<style lang="scss" scoped>
+@import "./../assets/scss/partials/_variables.scss";
 
-.footer-middle h1 a:hover {
-    font-size: 3.5rem;
+footer {
+    padding: $mobile-padding;
 
-    transition-duration: 300ms;
-    transition-property: font-size;
-}
-
-.footer-up,
-.footer-lower span {
-    font-size: 0.8rem;
-}
-
-.footer-lower nav ul li a {
-    color: white;
-    padding: 0.5rem 1rem;
-    border: white 1px solid;
-    border-radius: 3rem;
-}
-
-.footer-lower nav ul li a:hover {
-    color: black;
-    background-color: white;
-
-    transition-duration: 1s;
-    transition-property: background-color;
+    .container-none>* {
+        padding: ($mobile-padding/2) 0;
+    }
 }
 </style>
