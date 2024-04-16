@@ -4,10 +4,10 @@ export default {
 }
 </script>
 <template>
-    <div class="jumbotron container-none uppercase">
-        <div class="title">
-            <h1>Serena Dong</h1>
-            <p>Full Stack Web Developer</p>
+    <div class="jumbotron container-none">
+        <div class="title uppercase mb-5">
+            <h1 class="text-5xl font-bold">Serena Dong</h1>
+            <p class="text-xl font-bold">Full Stack Web Developer</p>
         </div>
         <div class="content">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt consequatur, optio voluptate iusto, nemo
@@ -18,25 +18,7 @@ export default {
 </template>
 <style scoped lang="scss">
 .jumbotron {
+    padding: 2rem 0;
 
-    .title {
-        h1 {
-            font-size: 8rem;
-            font-weight: 600;
-            margin: 0;
-        }
-
-        p {
-            margin: 0;
-
-            font-size: 5rem;
-            font-weight: 600;
-        }
-
-    }
-
-    .content {
-        width: 60%;
-    }
 }
 </style>

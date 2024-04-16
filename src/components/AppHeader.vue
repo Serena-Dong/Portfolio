@@ -7,7 +7,7 @@ import Jumbotron from './contents/Jumbotron.vue'
 
             <!-- Functions -->
             <div class="col functions">
-                <ul class="flex flex-col gap-3  m-0">
+                <ul class="flex flex-col gap-3 m-0 md:flex-row">
                     <li><a href="">About</a></li>
                     <li><a href="">Works</a></li>
                     <li><a href="">Contacts</a></li>
@@ -21,7 +21,14 @@ import Jumbotron from './contents/Jumbotron.vue'
             </div>
         </nav>
 
-        <!-- <jumbotron></jumbotron> -->
+        <!-- Jumbotron -->
+        <jumbotron></jumbotron>
+
+        <!-- Scroll -->
+        <div class="scroll text-end">
+            <span class="text-sm">scroll more <i class="fa-solid fa-arrow-down"></i></span>
+        </div>
+
     </header>
 </template>
 <style lang="scss" scoped>
@@ -30,6 +37,19 @@ import Jumbotron from './contents/Jumbotron.vue'
 header {
     padding: $mobile-padding;
 
-    border: 1px solid black;
+
+    height: 100vh;
+
+    nav {
+        height: 20%;
+    }
+
+    .jumbotron {
+        height: 75%;
+    }
+
+    .scroll {
+        height: 5%;
+    }
 }
 </style>
