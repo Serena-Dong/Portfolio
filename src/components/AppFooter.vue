@@ -30,7 +30,7 @@ footer {
     padding: $mobile-padding;
 
     .container-none>* {
-        padding: ($mobile-padding/2) 0;
+        padding: calc($mobile-padding/2) 0;
     }
 }
 </style>

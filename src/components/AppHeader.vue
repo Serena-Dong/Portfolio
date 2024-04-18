@@ -8,8 +8,8 @@ import Jumbotron from './contents/Jumbotron.vue'
             <!-- Functions -->
             <div class="col functions">
                 <ul class="flex flex-col gap-3 m-0 md:flex-row">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Works</a></li>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Portfolio</a></li>
                     <li><a href="">Contacts</a></li>
                 </ul>
             </div>
