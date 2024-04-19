@@ -24,3 +24,7 @@ header ul li,
 footer ul li {
     list-style: none;
 }
+
+@import "./partials/variables";
+@import "./partials/responsive";
+@import "./partials/animations";
